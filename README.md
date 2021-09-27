@@ -1,9 +1,41 @@
 # Asus-Prime-Z590-P
 
      BELOW CONFIGS DO NOT WORK !!
-     I WAS NOT ABLE TO MAKE A Z590 MOBO TO WORK WITHOUT USING A dGPU !  
+     I WAS NOT ABLE TO MAKE A Z590 MOBO TO WORK WITHOUT USING A dGPU !!  
+     INSTEAD OF BYING dGPU, I CHANGED THE MOTHERBOARD TO A Z490.
+     BUT YOU CN TRY BELOW FRAMEBUFFER PATCHING AND SEE IF ADDING SOME (NOT ALL) OF THESE VALUES WORKS
+     
+```XML
+<key>AAPL,ig-platform-id</key><data>BwCbPg==</data>
 
-Attached is my EFI, SSDT & config.plist setup.
+<key>device_type</key><string>VGA compatible controller</string>
+<key>AAPL,slot-name</key><string>Internal@0,2,0</string>
+
+<key>enable-hdmi20</key><data>AQAAAA==</data>
+<key>model</key><string>Intel UHD Graphics 630</string>
+<key>framebuffer-patch-enable</key><data>AQAAAA==</data>
+<key>framebuffer-unifiedmem</key><data>AAAAgA==</data>
+<key>hda-gfx</key><string>onboard-1</string>
+
+<key>framebuffer-con0-enable</key><data>AQAAAA==</data>
+<key>framebuffer-con1-enable</key><data>AQAAAA==</data>
+<key>framebuffer-con2-enable</key><data>AQAAAA==</data>
+
+<key>framebuffer-con0-pipe</key><data>EgAAAA==</data>
+<key>framebuffer-con1-pipe</key><data>EgAAAA==</data>
+<key>framebuffer-con2-pipe</key><data>EgAAAA==</data>
+
+<key>framebuffer-con1-busid</key><data>BgAAAA==</data>
+<key>framebuffer-con2-busid</key><data>BAAAAA==</data>
+		
+<key>framebuffer-con2-type</key><data>AAgAAA==</data>
+```			
+				     			
+			
+               
+
+Attached is my EFI, SSDT & config.plist setup. 
+
 But its not working. getting kernel panic 
 
 My system config is 
