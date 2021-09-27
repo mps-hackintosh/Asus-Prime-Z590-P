@@ -1,4 +1,8 @@
 # Asus-Prime-Z590-P
+
+     BELOW CONFIGS DO NOT WORK !!
+     I WAS NOT ABLE TO MAKE A Z590 MOBO TO WORK WITHOUT USING A dGPU !  
+
 Attached is my EFI, SSDT & config.plist setup.
 But its not working. getting kernel panic 
 
